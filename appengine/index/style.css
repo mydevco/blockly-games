@@ -1,0 +1,263 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#languageMenu {
+  width: 120px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  color: #fff;
+}
+
+option {
+  color: #000;
+  font-size: 12px;
+}
+
+html[dir="LTR"] #languageMenu {
+  right: 1em;
+}
+
+html[dir="RTL"] #languageMenu {
+  left: 1em;
+}
+
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #117495;
+  padding: 8px 16px;
+}
+
+#body {
+  min-height: 700px;
+  background: url("loginBackground.png") 0px 56px / contain no-repeat
+    rgb(205, 255, 229);
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 120px;
+}
+
+#subtitle {
+  font-size: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.games > div {
+  display: flex;
+  padding-left: 50px;
+}
+
+.game-item {
+  width: 200px;
+  background: #ffffff40;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+}
+
+.game-item p {
+  width: 100%;
+  text-align: center;
+  background: #ffffff80;
+  margin: 0;
+  padding: 15px;
+}
+
+.game-item img {
+  object-fit: contain;
+  margin: 30px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+#clearDataPara {
+  position: absolute;
+  bottom: 0;
+  margin: 1em;
+}
+
+#clearData {
+  padding: 0 4px;
+  margin: 5px 10px;
+  font-size: medium;
+}
+
+#path {
+  stroke: #ccc;
+  stroke-width: 1;
+  stroke-linecap: round;
+  fill: none;
+  stroke-dasharray: 180;
+  stroke-dashoffset: 180;
+  animation: dash 0.7s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.iconBack {
+  fill: #fff;
+}
+
+.iconBorder {
+  stroke: #aaa;
+  stroke-width: 5;
+  fill: rgba(0, 0, 0, 0.1);
+}
+
+a:focus > .iconBorder,
+a:hover > .iconBorder {
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+a:focus > text,
+a:hover > text {
+  fill: #666;
+}
+
+.icon {
+  animation: pop 0.5s cubic-bezier(0.5, 0.5, 0.5, 1.5) forwards;
+  visibility: hidden;
+}
+
+.icon text {
+  text-anchor: middle;
+  font-size: 18pt;
+}
+
+#icon-puzzle {
+  animation-delay: 0s;
+}
+
+#icon-maze {
+  animation-delay: 0.1s;
+}
+
+#icon-bird {
+  animation-delay: 0.2s;
+}
+
+#icon-turtle {
+  animation-delay: 0.3s;
+}
+
+#icon-movie {
+  animation-delay: 0.4s;
+}
+
+#icon-music {
+  animation-delay: 0.5s;
+}
+
+#icon-pond-tutor {
+  animation-delay: 0.6s;
+}
+
+#icon-pond-duck {
+  animation-delay: 0.7s;
+}
+
+#back-puzzle {
+  animation-delay: 0.3s;
+}
+
+#back-maze {
+  animation-delay: 0.4s;
+}
+
+#back-bird {
+  animation-delay: 0.5s;
+}
+
+#back-turtle {
+  animation-delay: 0.6s;
+}
+
+#back-movie {
+  animation-delay: 0.7s;
+}
+
+#back-music {
+  animation-delay: 0.8s;
+}
+
+#back-pond-tutor {
+  animation-delay: 0.9s;
+}
+
+#back-pond-duck {
+  animation-delay: 1s;
+}
+
+@keyframes pop {
+  from {
+    transform: translate(150px, 50px) scale(0);
+    visibility: visible;
+  }
+  to {
+    transform: translate(0, 0) scale(1);
+    visibility: visible;
+  }
+}
+
+.gaugeBack {
+  stroke: #aaa;
+  stroke-width: 6;
+  fill: none;
+  animation: pop 0.1s linear forwards;
+  visibility: hidden;
+}
+
+.gaugeFront {
+  stroke: #0b0;
+  stroke-width: 8;
+  fill: none;
+}
+
+.footer {
+  background: #117495;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 200px;
+}
+
+.footer ul {
+  margin: 0;
+}
+
+.footer ul li {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.footer ul li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer img {
+  width: 145px;
+  height: 40px;
+  margin: 0 6px;
+}
